@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Vue.js Basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <style>
+        
+    </style>
+  </head>
+  <body>
+    <h1>Vue Basics</h1>
+
+    <div id="app"> 
+        <p>My name is {{ name }}</p>
+        <input type="text" @keyup="updateName">
+    </div>
+
+    <div id="app_model"> 
+            <p>My name is {{ name }}</p>
+            <input type="text" v-model="name">
+        </div>
+  
+    <script src="app_keyb_events.js"></script>
+  </body>
+</html>

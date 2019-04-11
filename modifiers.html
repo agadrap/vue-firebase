@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Vue.js Basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Modifiers</h1>
+
+    <div id="app"> 
+        <p>{{ title }}</p>
+        <button @click.alt="logMessage">click me</button>
+        <a href="http://google.com" @click.prevent="logMessage">Google</a>
+    </div>
+
+    <script src="modifiers.js"></script>
+  </body>
+</html>

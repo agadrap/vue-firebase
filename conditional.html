@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Vue.js Basics</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+    <h1>Conditional Output with v-if</h1>
+
+    <div id="app"> 
+        <p>{{ title }}</p>
+        <p v-if="showName">Mario</p>
+        <p v-if="showAge">28</p>
+        <button @click="toggleName">ShowName: {{ showName }}</button>
+        <button @click="toggleAge">ShowAge: {{ showAge }}</button>
+    </div>
+
+    <div id="appfor"> 
+            <p>{{ title }}</p>
+            <ul>
+                <li v-for="item in items">{{ item }}</li>
+            </ul>
+
+            <p>Ninjas</p>
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Belt</th>
+                </tr>
+                <tr v-for="(ninja, index) in ninjas">
+                    <td>{{ index + 1 }}</td>
+                    <td>{{ ninja.name }}</td>
+                    <td>{{ ninja.age }}</td>
+                    <td>{{ ninja.belt }}</td>
+                </tr>
+            </ul>
+        </div>
+
+    <script src="conditional.js"></script>
+  </body>
+</html>
